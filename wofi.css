@@ -1,0 +1,53 @@
+@define-color bg #002130;
+@define-color fg #fdf0d5;
+@define-color black #001f2e;
+@define-color red #e63946;
+@define-color green #2a9d8f;
+@define-color yellow #fca311;
+@define-color blue #669bbc;
+@define-color magenta #e63946;
+@define-color cyan #90e0ef;
+@define-color white #f1faee;
+@define-color bright_black #506874;
+@define-color bright_red #e63946;
+
+window {
+    background-color: @bg;
+    border: 2px solid @red;
+}
+
+input {
+    background-color: @bg;
+    color: @fg;
+    border: 1px solid @black;
+}
+
+input:selected {
+    background-color: @bright_black;
+    color: @bright_red;
+}
+
+#entry {
+    color: @fg;
+    background-color: @bg;
+    padding: 5px;
+    margin: 2px;
+}
+
+#entry:selected {
+    background-color: @bright_black;
+    color: @bright_red;
+}
+
+scrollbar {
+    background-color: @bg;
+}
+
+scrollbar slider {
+    background-color: @black;
+    border-radius: 5px;
+}
+
+scrollbar slider:hover {
+    background-color: @red;
+}
